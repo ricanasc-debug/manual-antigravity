@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antigravity | Manual Passo a Passo</title>
+    <!-- Fonte Inter para corpo e JetBrains Mono para código -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sidebar de Navegação (Padrão de Documentação) -->
+    <aside class="sidebar">
+        <div class="logo">
+            <i data-lucide="zap"></i>
+            <span>Antigravity</span>
+        </div>
+        <p class="subtitle">Manual de Receitas 1.0</p>
+        
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#intro" class="active"><i data-lucide="book-open"></i> O que é Antigravity?</a></li>
+                <li><a href="#prompts"><i data-lucide="message-square"></i> Receita do Bom Comando</a></li>
+                <li><a href="#skills"><i data-lucide="award"></i> Como adicionar Skills</a></li>
+                <li><a href="#mcp"><i data-lucide="server"></i> Integando MCPs</a></li>
+                <li><a href="#apple-design"><i data-lucide="layout-dashboard"></i> Como Criar Sites</a></li>
+                <li><a href="#media-guide"><i data-lucide="image"></i> Fotos & Vídeos</a></li>
+                <li><a href="#auth-system"><i data-lucide="lock"></i> Sistemas & Logins</a></li>
+                <li><a href="#crm-guide"><i data-lucide="users-round"></i> O CRM Perfeito</a></li>
+                <li><a href="#dashboards"><i data-lucide="layout-template"></i> O Dashboard Moderno</a></li>
+                <li><a href="#bug-guide"><i data-lucide="siren"></i> SOS: Deu Erro!</a></li>
+                <li><a href="#hosting"><i data-lucide="globe"></i> Publicando na Internet (Hospedagem)</a></li>
+                <li><a href="#dictionary"><i data-lucide="book-a"></i> Dicionário Tradutor</a></li>
+                
+                <li style="margin-top: 25px; margin-bottom: 5px; padding-left: 15px; font-size: 11px; text-transform: uppercase; color: var(--text-secondary); letter-spacing: 1px; font-weight: 700;">Ferramentas Google</li>
+                <li><a href="#google-sheets"><i data-lucide="file-spreadsheet"></i> Planilhas e Docs</a></li>
+                <li><a href="#google-sites"><i data-lucide="layout-template"></i> Sites (Construtor)</a></li>
+                <li><a href="#google-notebook"><i data-lucide="merge"></i> NotebookLM (Labs)</a></li>
+                <li><a href="#google-stitch"><i data-lucide="palette"></i> Stitch (Vibe Coding)</a></li>
+                <li><a href="#google-opal"><i data-lucide="brain"></i> Opal (Lógica IA)</a></li>
+            </ul>
+        </nav>
+        
+        <div class="sidebar-tips">
+            <i data-lucide="lightbulb"></i>
+            <p>Sempre que travar, peça para eu "ler o histórico" ou "revisar os objetivos".</p>
+        </div>
+    </aside>
+
+    <!-- Conteúdo Principal -->
+    <main class="content">
+        <header class="topbar">
+            <h1>Descomplicando a Inteligência</h1>
+            <p>Esse é o seu guia prático, em formato de receita, para extrair o sangue tecnológico do Antigravity.</p>
+        </header>
+
+        <!-- Seção: Intro -->
+        <section id="intro" class="doc-section active-section">
+            <div class="section-badge">PASSO 1</div>
+            <h2>O que é o Antigravity?</h2>
+            <p class="lead">Eu não sou apenas um chat de conversa que "cospe" texto. Eu sou um <strong>Agente Autônomo de Código</strong> com acesso direto ao terminal do seu PC. Tudo o que um Engenheiro de Software Sênior faria com as mãos, eu recrio aqui.</p>
+            
+            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                
+                <div class="info-card">
+                    <div class="card-icon" style="color: #00e5ff;"><i data-lucide="layout"></i></div>
+                    <h3>1. Plataformas e Sistemas</h3>
+                    <p>Muito além de páginas simples, eu consigo construir coisas gigantes como Plataformas de Vendas, Sistemas de Estoque e até Redes Sociais usando as mesmas ferramentas de ponta que o Google e o Facebook usam hoje em dia.</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="card-icon" style="color: #a600ff;"><i data-lucide="smartphone"></i></div>
+                    <h3>2. Aplicativos de Celular</h3>
+                    <p>Consigo programar aplicativos completos que você pode publicar na lojinha da Apple (App Store) ou Android (Google Play). Eu desenho as telas, configuro a câmera, o GPS e faço a lógica por trás.</p>
+                </div>
+                
+                <div class="info-card">
+                    <div class="card-icon" style="color: #fca311;"><i data-lucide="bug"></i></div>
+                    <h3>3. O Detetive de Bugs</h3>
+                    <p>Seus códigos quebraram num projeto obscuro antigo? Eu baixo os logs do terminal, leio infinitas linhas de erro (via ferramenta Read Terminal) e ajusto os arquivos problemáticos um por um para você.</p>
+                </div>
+                
+                <div class="info-card">
+                    <div class="card-icon" style="color: #4CAF50;"><i data-lucide="bot"></i></div>
+                    <h3>4. Navegador Integrado</h3>
+                    <p>Acredite ou não, possuo um Robô-Navegador invisível. Posso abrir o teste de um site recém-criado, preencher um formulário de login sozinho e checar as telas de erro no lugar do seu cliente humano.</p>
+                </div>
+                
+                <div class="info-card">
+                    <div class="card-icon" style="color: #ff0055;"><i data-lucide="search"></i></div>
+                    <h3>5. Pesquisador Autônomo</h3>
+                    <p>Não sei a linguagem XPTO? Você manda eu descobrir, eu varro documentações oficiais remotas ou faço pesquisas web independentes até entender as novidades que acabaram de lançar.</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="card-icon" style="color: #fff;"><i data-lucide="server"></i></div>
+                    <h3>6. Manipulador de Backend</h3>
+                    <p>Programo seus servidores, manipulo tabelas de Banco de Dados via "MCP", crio APIs do zero com Node/Python e executo migrações complexas gerando e rodando os comandos de terminal.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Seção: Prompts (A Receita) -->
+        <section id="prompts" class="doc-section">
+            <div class="section-badge">PASSO 2</div>
+            <h2>A Receita do Bom Comando (Prompting)</h2>
+            <p class="lead">Como pedir as coisas para mim para que nada dê errado e eu não faça os códigos pela metade?</p>
+            
+            <div class="recipe-box">
+                <div class="recipe-ingredients">
+                    <h3>Ingredientes do Sucesso:</h3>
+                    <ul>
+                        <li><i data-lucide="check-circle-2"></i> O **Objetivo** (Ex: Crie uma Galeria)</li>
+                        <li><i data-lucide="check-circle-2"></i> O **Estilo** (Ex: Fundo preto, cantos arredondados)</li>
+                        <li><i data-lucide="check-circle-2"></i> O **Caminho** (Deixar claro qual pasta ou projeto estamos lidando)</li>
+                    </ul>
+                </div>
+                
+                <div class="recipe-steps">
+                    <h3>Modo de Preparo:</h3>
+                    <div class="step-item">
+                        <span class="step-num">1</span>
+                        <p><strong>Dê Contexto:</strong> Se começarmos do nada, peça para eu ler o "index.html" ou rodar a aplicação antes de programar às cegas.</p>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-num">2</span>
+                        <p><strong>Seja Granular:</strong> Peça por partes. Em vez de "Faça um iFood", diga "Vamos fazer a tela inicial do iFood". Quando ela acabar, fazemos o carrinho.</p>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-num">3</span>
+                        <p><strong>Corrija Imediatamente:</strong> Se eu gerar uma tela e o botão ficar feio, diga "O botão verde não combinou, pinte de amarelo".</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="prompt-maker" id="prompt-maker" style="margin-top: 50px; padding: 40px; background: rgba(0, 229, 255, 0.05); border: 1px solid rgba(0, 229, 255, 0.3); border-radius: 20px; box-shadow: 0 10px 40px rgba(0, 229, 255, 0.1);">
+                <div style="display: flex; gap: 15px; align-items: center; margin-bottom: 25px;">
+                    <i data-lucide="wand-2" style="color: var(--neon-blue); width: 32px; height: 32px;"></i>
+                    <h3 style="color: var(--neon-blue); font-size: 26px; border: none; padding: 0; margin: 0;">Fazedor de Prompt Mágico (Modo Guiado)</h3>
+                </div>
+                <p style="margin-bottom: 35px; color: var(--text-secondary); font-size: 16px;">Inspirado no <em>robboliver.digital</em>: Não sabe escrever comandos? Sem problema. <strong>Gire as roldanas abaixo</strong> e eu escreverei e cuspirei o "Prompt Oficial Impecável" para você usar direto no nosso chat!</p>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-bottom: 30px;">
+                    <div>
+                        <label style="display: block; font-weight: 700; margin-bottom: 10px; color: #fff;">1. O que vamos criar?</label>
+                        <select id="pm-type" style="width: 100%; padding: 15px; background: #1a1e26; color: #fff; border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; outline: none; font-size: 15px; cursor: pointer;">
+                            <option value="Landing Page Simples (de alta conversão)">Site Institucional Rápido</option>
+                            <option value="Landing Page Luxuosa Nível Apple (com Efeito Vidro)">Landing Page Estilo Apple</option>
+                            <option value="Aplicativo / SaaS (com tela de Login falsa)">Aplicativo SaaS Completo (Logins)</option>
+                            <option value="Dashboard de Sistema Interno">Dashboard de Gráficos (Sistema)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label style="display: block; font-weight: 700; margin-bottom: 10px; color: #fff;">2. Cores (Pra Dar Sucesso)</label>
+                        <select id="pm-style" style="width: 100%; padding: 15px; background: #1a1e26; color: #fff; border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; outline: none; font-size: 15px; cursor: pointer;">
+                            <option value="Escuro Hacker com Ciano e Roxo neon (igual o Antigravity)">Dark Neon (Hacker Moderno)</option>
+                            <option value="Claro e Minimalista (Muito branco, espaço e luxo claro)">Light Minimalista (Claro e Limpo)</option>
+                            <option value="Sombrio Premium Estilo Apple (Preto de luxo, cinza titânio e textos limpos, excelente para tech e status elevado)">Luxo Titânio (Status e Tech)</option>
+                            <option value="Perfeito para Leitura de Blog (Fundo 'off-white' meio creme com textos cinza chumbo escuro para não cansar as vistas do leitor longo)">Leitura Sedosa (Blog Perfeito)</option>
+                            <option value="Saúde e Harmonia (Branco gelo muito limpo com pequenos detalhes e botões em Verde Água e tons curativos da natureza)">Clínica de Paz (Saúde / Estética)</option>
+                            <option value="Alta Urgência de Venda Magmática (Fundo agressivo de contraste com botões Laranja, Amarelo Ouro e Vermelho pra forçar forte a compra)">Venda Urgente (Botão Pânico)</option>
+                            <option value="Corporativo Gigante Ultra Confiável (Azul Marinho super denso com Cinza Platinado Ouro pra passar sensação de Instituição Centenária Inquebrável)">O Banco Suíço (Confiança Absoluta)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label style="display: block; font-weight: 700; margin-bottom: 10px; color: #fff;">3. O Tom do Produto</label>
+                        <select id="pm-tone" style="width: 100%; padding: 15px; background: #1a1e26; color: #fff; border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; outline: none; font-size: 15px; cursor: pointer;">
+                            <option value="Altamente Vendedor (Gatilhos Mentais de Urgência)">Vendedor Agressivo</option>
+                            <option value="Sério, direto e de altíssimo respeito">Sério e Corporativo</option>
+                            <option value="Descontraído, ousado e focado na nova geração">Jovem e Pop</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="code-example" style="margin-top: 10px; border-color: rgba(0, 229, 255, 0.5); box-shadow: 0 0 30px rgba(0, 229, 255, 0.15);">
+                    <div class="code-header" style="background: rgba(0, 229, 255, 0.1); border-bottom: 1px solid rgba(0, 229, 255, 0.2);">
+                        <span style="color: #00e5ff; font-weight: 700; font-size: 14px;">COMANDO FINAL: Mande pro AG.</span>
+                        <button class="copy-btn" style="background: var(--neon-blue); color: #000; padding: 8px 20px; border-radius: 20px; font-weight: 700; transition: transform 0.2s;"><i data-lucide="copy" style="color: #000;"></i> Copiar Esse Prompt</button>
+                    </div>
+                    <pre style="background: #0a0c0e;"><code id="pm-output" style="color: #fff; font-size: 16px; font-family: 'Inter', sans-serif;">PROCESSANDO MAGIA...</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Skills -->
+        <section id="skills" class="doc-section">
+            <div class="section-badge">PASSO 3</div>
+            <h2>Habilidades Especiais (Skills)</h2>
+            <p class="lead">Skills são como "cartuchos de videogame" que você espeta em mim. São pastas cheias de conhecimento fechadinho (como regras e scripts de negócio) e que eu passo a ler e respeitar como se fossem a bíblia.</p>
+            
+            <div class="recipe-box">
+                <div class="recipe-steps">
+                    <h3>Como preparar uma Skill para eu usar:</h3>
+                    <div class="step-item">
+                        <span class="step-num">1</span>
+                        <p><strong>Descubra a pasta:</strong> Normalmente as Skills ficam salvas num diretório próprio do agente (Pode me pedir para verificar essa estrutura de pastas onde estamos salvando).</p>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-num">2</span>
+                        <p><strong>Crie o arquivo principal:</strong> Na pasta da Skill, crie um documento chamado <code>SKILL.md</code>. Lá dentro, você escreve em linguagem humana tudo aquilo que "Eu nunca posso esquecer ao rodar este tipo de projeto".</p>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-num">3</span>
+                        <p><strong>Rechone a Skill de assets:</strong> Se a Skill exige coisas (Templates, arquivos), crie uma subpasta <code>/resources</code> ali junto.</p>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-num">4</span>
+                        <p><strong>Como usar:</strong> Sempre que quiser me invocar naquela Skill, é só falar comigo na conversa normal: "Vá no seu arquivo de Skills e siga as instruções do SKILL X". Eu vou ler rapidamente e seguir à risca!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: MCP -->
+        <section id="mcp" class="doc-section">
+            <div class="section-badge">PASSO 4</div>
+            <h2>Conectando Ferramentas Externas: MCP</h2>
+            <p class="lead">MCP significa <em>Model Context Protocol</em>. Parece palavrão de engenheiro de foguetes, mas na verdade é só um "Cabo Universal" inventado para eu me plugar aos seus programas externos!</p>
+            
+            <div class="card-grid mcp-cards">
+                <div class="info-card">
+                    <div class="card-icon" style="color: #4CAF50;"><i data-lucide="database"></i></div>
+                    <h3>Banco de Dados</h3>
+                    <p>Podemos configurar um MCP onde eu ganho acesso direto para vasculhar o seu banco PostgreSQL remotamente e sugerir comandos SQL ou achar erros sozinhos nos seus dados.</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon" style="color: #F44336;"><i data-lucide="github"></i></div>
+                    <h3>GitHub Server</h3>
+                    <p>Se você plugar um MCP do Github, eu consigo ler Repositórios do Github (issues, códigos) pela nuvem, analisar erros do sistema alheio, entre outros.</p>
+                </div>
+            </div>
+
+            <div class="recipe-box mcp-recipe" style="margin-top: 30px;">
+                <div class="recipe-steps" style="flex: 100%;">
+                    <h3>A Receita Absoluta do MCP (JSON de Configuração)</h3>
+                    <p style="color: var(--text-secondary); font-size: 16px; margin-bottom: 20px;">Aqui está o passo a passo de como plugar um banco de dados real na minha inteligência artificial usando MCP via Node.js (npx):</p>
+                    
+                    <div class="step-item">
+                        <span class="step-num">1</span>
+                        <p><strong>Encontre o Servidor MCP:</strong> A comunidade já programou conectores pra tudo. Digamos que você queira que eu leia um banco de dados chamado SQLite. Você usará o pacote: <code>@modelcontextprotocol/server-sqlite</code>.</p>
+                    </div>
+                    
+                    <div class="step-item">
+                        <span class="step-num">2</span>
+                        <p><strong>Configure O "Mestre":</strong> Para eu ganhar o superpoder, você precisa achar o arquivo de configuração do sistema que me roda (como por exemplo o <code>claude_desktop_config.json</code> ou as Configurações do Antigravity) e declarar a invocação usando JSON puro:</p>
+                    </div>
+                    
+                    <div class="code-example" style="margin: 15px 0 25px 0;">
+                        <div class="code-header"><span>mcp_config.json</span><button class="copy-btn"><i data-lucide="copy"></i> Copiar</button></div>
+                        <pre><code>{
+  "mcpServers": {
+    "sqlite_local": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sqlite",
+        "C:/caminho/do/seu/bancodedados.db"
+      ]
+    }
+  }
+}</code></pre>
+                    </div>
+
+                    <div class="step-item">
+                        <span class="step-num">3</span>
+                        <p><strong>A Mágica do Reinício:</strong> Salve o arquivo JSON e reinicie a minha interface (esteja fechando e abrindo o app, ou reiniciando o servidor Antigravity). Quando eu acordar, olharei esse JSON e abrirei túneis de dados invisíveis. Sem que você veja, irei ler <code>list_resources</code> e <code>list_tools</code> daquele servidor.</p>
+                    </div>
+
+                    <div class="step-item">
+                        <span class="step-num">4</span>
+                        <p><strong>Usando o Poder:</strong> Acabou a teoria! Agora que a chave está ligada, você fala na nossa janela de Chat normal: <em>"Acesse o meu banco de dados de clientes usando o MCP e me diga quanto dinheiro a empresa lucrou"</em>. Eu usarei as ferramentas recém descobertas sozinho pra fazer a varredura SQL real na sua máquina!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Criando Sites -->
+        <section id="apple-design" class="doc-section">
+            <div class="section-badge">PASSO 5</div>
+            <h2>Como criar Sites e Landing Pages 🎨</h2>
+            <p class="lead">Entenda os 3 níveis de complexidade estética de Sites que você pode construir usando Inteligência Artificial. Suba de nível conforme a sua ambição.</p>
+            
+            <div class="recipe-box">
+                <div class="recipe-steps" style="flex: 100%;">
+                    <h3>1. Site Simples (Rápido e Funcional)</h3>
+                    <p>O feijão com arroz perfeito. Um site liso estruturado para apresentar o seu pequeno negócio logo de cara. Foca puramente na entrega veloz da informação básica.</p>
+                    <div class="step-item" style="margin-top: 15px;">
+                        <span class="step-num">1</span>
+                        <p><strong>A Receita de Entrada:</strong> <em>"Crie uma Landing Page simples para o meu consultório unificada em 1 só arquivo. Use fundo branco claro, coloque um título escuro grande, uma área vazia para eu tacar minha foto depois, um parágrafo 'Quem sou eu', e lá no fundo um botão verde gigante chamando pro meu Whatsapp."</em></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-box">
+                <div class="recipe-steps" style="flex: 100%;">
+                    <h3>2. Site Médio (Moderno e Dinâmico)</h3>
+                    <p>Entrando nas tendências de UI modernas. Aqui nós paramos de empilhar texto e incluímos formas agradáveis, caixas e caixinhas da moda.</p>
+                    <div class="step-item" style="margin-top: 15px;">
+                        <span class="step-num">2</span>
+                        <p><strong>A Receita Elegante:</strong> <em>"Suba o nível visual daquela Landing Page. Quero que a área dos 'Meus Serviços' se torne uma Grade (Bento Grid, como de Fintechs) e que minhas perguntas da seção de Dúvidas (FAQ) se escondam. Transforme elas num Acordeão: caixas que abrem e fecham perfeitamente quando o cliente clica. Traga a fonte Roboto direto do banco Google Fonts pra ficar elegante."</em></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="recipe-box">
+                <div class="recipe-steps" style="flex: 100%;">
+                    <h3>3. Estilo Apple 🍎 (Luxo e Movimento)</h3>
+                    <p>O segredo gigantesco dos sites multi-milhonários não é a quantidade absurda de funções, mas sim o **Movimento Fluído (Flow)** e a **Textura**. Tudo deve dançar e ganhar vida no palco para hipnotizar o clique e a rolagem da pessoa.</p>
+                    <div class="step-item" style="margin-top: 15px;">
+                        <span class="step-num">3</span>
+                        <p><strong>A Receita da Maestria (Imagem no Flow):</strong> <em>"Antigravity, ativemos a maestria. Aplique o efeito de Glassmorphism (Efeito translúcido de Vidro jateado desfocado) na barra do meu título e de fundo nas caixas. Em seguida, pegue a foto do topo e <strong>crie a imagem num formato central 'flow' (gigante, cobrindo tudo de forma limpa) e anime para que ela se movimente</strong> (use os códigos da biblioteca mestre GSAP). Quero que ao iniciar e ao fazer scroll na página, essa imagem puxe as linhas de fundo magicamente e corra pela tela igual ao design fluido cinematográfico da Apple"</em>.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Seção: Midia e Videos -->
+        <section id="media-guide" class="doc-section">
+            <div class="section-badge">GAVETA DE MÍDIAS 🖼️</div>
+            <h2>Fotos, Vídeos e Estética (A magia visual)</h2>
+            <p class="lead">Houve um tempo em que as pessoas sofriam meses pra fazer uma foto aparecer no site ou rodar aquele vídeo luxuoso no fundo da tela. Acabou. O segredo de injetar mídia local é ridicularmente fácil, mas exigente de regras:</p>
+            
+            <div class="recipe-box">
+                <div class="recipe-steps" style="flex: 100%;">
+                    
+                    <div class="step-item" style="margin-top: 15px;">
+                        <span class="step-num">1</span>
+                        <p><strong>A Gaveta Obrigatória (`assets`):</strong> O erro matador que você descobriu antes é tentar usar imagens lá da pasta de "Downloads" do Windows. Quando eu for subir seu site pro mundo na hospedagem, o computador gringo da nuvem não terá acesso à sua pasta Downloads. Por isso, <strong>SEMPRE crie uma pastinha de nome <code>assets</code> ou <code>img</code></strong> ao lado do seu arquivo <code>index.html</code>. Pegue fotos e vídeos de Arquitetura e jogue tudo ali dentro.</p>
+                    </div>
+
+                    <div class="step-item">
+                        <span class="step-num">2</span>
+                        <p><strong>Nomes Limpos e Sem Espaços:</strong> Computadores gringos odeiam espaço e ponto bizarro. Se o arquivo chamar <code>Foto Final (2) Cóópia!!!.jpeg</code>, o site vai quebrar. Dê botão direito e renomeie o arquivo de forma super limpa, com tudo em letras minúsculas: <strong><code>fachada-loja.jpg</code></strong> ou <strong><code>logo-roxa.png</code></strong>. E se a imagem for feia, é simples, diga para Mim: <em>"Antigravity, joguei uma imagem no meu index, mas faça ela ficar maravilhosa e redonda, adicionando um efeito Cover CSS!"</em></p>
+                    </div>
+
+                    <div class="step-item">
+                        <span class="step-num">3</span>
+                        <p><strong>No Cinema (Vídeos Autoplay):</strong> O luxo supremo! Se você encontrar um vídeo sem som bem limpo e quiser como tela de fundo inteira do site, só avise e ordene: <em>"Antigravity, pegue este vídeo chamado 'fundo-home.mp4' na pasta 'assets', e coloque ele rodando em Loop e Silenciado (Muted) por trás de todo o letreiro principal esmaecido da minha Landing Page para dar o efeito Cinema Absoluto"</em>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Sistemas com Senha -->
+        <section id="auth-system" class="doc-section">
+            <div class="section-badge">BÔNUS AVANÇADO</div>
+            <h2>Sistemas & Autenticação (Acesso Restrito) 🔒</h2>
+            <p class="lead">Uma Landing Page é apenas uma vitrine pública. Mas e se você quiser criar um aplicativo fechado, que as pessoas precisem digitar Senha para entrar num Banco de Dados próprio? Bem-vindo ao mundo dos Sistemas.</p>
+            
+            <div class="recipe-box">
+                <div class="recipe-steps" style="flex: 100%;">
+                    <h3>1. O Frontend e o Backend (As duas metades)</h3>
+                    <p>Para criar um sistema verdadeiro (Dashboard Seguro), a nossa criação sempre se dividirá em duas metades obrigatórias:</p>
+                    <div class="step-item" style="margin-top: 15px;">
+                        <span class="step-num">1</span>
+                        <p><strong>A Rosto Visível (Frontend):</strong> Vamos criar a maquiagem da tela do Site (Formulário do Login). Nenhuma senha é guardada aqui, é só botões e visual cosmético.</p>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-num">2</span>
+                        <p><strong>O Cofre Invisível (Backend):</strong> Em seguida, crio a programação profunda com meu código Mestre (<em>Node.js</em> ou <em>Python</em>) que pega a senha digitada nesse rosto, joga pro Banco de Dados, averígua a matemática pesada trancada, e destranca a porta.</p>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-num">3</span>
+                        <p><strong>O Comando para Mim:</strong> <em>"AG, crie um Sistema de Estoque. Inicie pelo 'Backend'. Programe as rotas invisíveis e conecte a um Banco de Dados Local (SQLite). Só quando estiver perfeito nós faremos o Frontend com as cores para ligar os botões."</em></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-box">
+                <div class="recipe-steps" style="flex: 100%;">
+                    <h3>2. BaaS (Bancos Prontos na Nuvem - Firebase / Supabase)</h3>
+                    <p>Se você não quer ter dor de cabeça configurando Bancos de Dados difíceis na sua máquina, usamos uma nuvem terceirizada chamada "BaaS". É como se fosse um "Google Drive glorificado" apenas para estocar senhas de sistemas e tabelas com mega segurança, sem você precisar sujar as mãos.</p>
+                    <div class="step-item" style="margin-top: 15px;">
+                        <span class="step-num">1</span>
+                        <p><strong>Como Funciona:</strong> Você vai na internet, digita no Google <em>Supabase.com</em> ou <em>Firebase.com</em> e faz uma conta gratuita e limpa. Eles te dão uma "Chave Secreta API".</p>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-num">2</span>
+                        <p><strong>A Mágica no Chat:</strong> <em>"AG, construa minha tela de Login e a conecte no BaaS Supabase. A minha Chave Secreta do Supabase é '123xpto'. A partir de agora, jogue a conferência e o salvamento de clientes lá no servidor mestre deles!"</em></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-box">
+                <div class="recipe-steps" style="flex: 100%;">
+                    <h3>3. Hospedagem Focada em Sistemas (Vercel ou Render)</h3>
+                    <p>Hospedar sua "página estática de publicidade gratuita" no GitHub (Passo 6) funciona lindo. Porém um Sistema Pesado com Robô Backend não pode ficar numa página gratuita do GitHub. Ele precisa de maquinários de Servidor vivo processando as contas matemáticas.</p>
+                    
+                    <div style="margin-top: 20px; margin-bottom: 20px; padding: 15px; background: rgba(255, 68, 68, 0.05); border-left: 4px solid #ff4444; border-radius: 4px;">
+                        <span style="display: flex; align-items: center; gap: 8px; color: #ff4444; font-weight: 700; margin-bottom: 5px;"><i data-lucide="alert-triangle" style="width: 18px; height: 18px;"></i> Cuidado com a Hostgator / Hostinger!</span>
+                        <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #e0e0e0;">Não compre o plano básico dessas empresas para colocar Sistemas/Logins. Elas são como "Casas de Residência" (ótimas para hospedar sites estáticos e WordPress simples). Nosso sistema é uma "Fábrica Industrial" que exige servidores tipo Cloud/Node pesados, que nelas vai custar caro e te dar dor de cabeça imensa pra instalar.</p>
+                    </div>
+
+                    <div class="step-item">
+                        <span class="step-num">1</span>
+                        <p><strong>A Escolha Premium Automática:</strong> Recomendamos fugir do convencional e assinar a plataforma especializada em "Fábricas Modernas" grátis/paga chamada <em>Vercel.com</em> ou <em>Render.com</em>.</p>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-num">2</span>
+                        <p><strong>Publicando:</strong> Elas são geniais. Você faz o seu passo a passo do <em>GitHub</em> (Passo 6 regular), entra num painel da <em>Vercel.com</em>, clica pra associar o seu GitHub nela e pronto! Ela instala o Node.js como mágica instantânea e mantém seu Login online o ano inteiro.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Seção: CRM Guide -->
+        <section id="crm-guide" class="doc-section">
+            <div class="section-badge">A CEREJA DO BOLO 🍒</div>
+            <h2>O CRM Perfeito (Sistema de Gestão) 🎯</h2>
+            <p class="lead">Pequenos negócios não precisam pagar caro pelo Hubspot. Nós podemos comandar o Antigravity para criar um "Caderninho Digital Supremo" personalizado para as suas exatas necessidades de vendas. Veja o plano de voo.</p>
+            
+            <div class="recipe-box">
+                <div class="recipe-steps" style="flex: 100%;">
+                    <h3>O Plano de Orquestração do CRM Mestre</h3>
+                    <p>Você nunca pede pra IA "criar um CRM inteiro hoje". Sistemas são como montar carros; começamos pelo chassi e terminamos na lataria.</p>
+                    
+                    <div class="step-item" style="margin-top: 15px;">
+                        <span class="step-num">1</span>
+                        <p><strong>A Base (O Banco de Dados):</strong> Antes de ver cores, crie o cofre. Comando: <em>"Antigravity, crie as tabelas do meu CRM de Arquitetura no servidor (Supabase). Preciso de 1 Tabela para [Contatos do Cliente], 1 tabela para [Serviços Orçados], e 1 tabela que marque a [Fase da Venda: Prospecto, Negociando, Fechado]."</em></p>
+                    </div>
+
+                    <div class="step-item">
+                        <span class="step-num">2</span>
+                        <p><strong>O Quadro Kanban (A Lataria):</strong> Essa é a cara clássica do CRM Moderno. Comando de Frontend: <em>"Agora crie o Painel protegido conectando com aquelas tabelas. Quero o visual no formato 'Quadro Kanban' (igual ao Trello). Onde eu possa pegar o card do cliente fulano que 'Ligou hoje' com o Mouse e soltar e arrastar ele pra coluna 'Assinou Contrato'."</em></p>
+                    </div>
+
+                    <div class="step-item">
+                        <span class="step-num">3</span>
+                        <p><strong>A Automação Mágica (O Piloto Automático):</strong> Conecte tecnologias! Comando: <em>"Antigravity, adicione a biblioteca de disparo do WhatsApp. Faça uma ligação (Webhook) com o Frontend. Todas as vezes que eu pegar o card de um Cliente e arrastar para a coluna 'Fechado', o meu servidor tem que enviar magicamente uma mensagem automática pro celular dele dizendo: Obrigado por fechar com nossa empresa!"</em></p>
+                    </div>
+
+                    <div class="step-item">
+                        <span class="step-num">4</span>
+                        <p><strong>O Salto Evolutivo (Conectando ao Dashboard):</strong> Um CRM puro é só o setor operacional. Para os diretores verem o lucro subindo de verdade, ele precisa virar um Painel. Diga: <em>"Antigravity, conecte minha tabela do Kanban à tela gráfica do meu Dashboard para o Chefe ver a pizza piscar em Tempo Real."</em> (Veja mais na aba <strong>O Dashboard Moderno</strong> logo abaixo).</p>
+                    </div>
+
+                    <div style="margin-top: 20px; padding: 15px; background: rgba(0, 229, 255, 0.05); border-left: 4px solid #00e5ff; border-radius: 4px;">
+                        <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #fff;"><strong>Dica da Tiazinha:</strong> Comece pequeno! Crie um CRM só com nome e telefone. Peça pra subir isso e veja se roda. Quando a rodinha de treino rodar, aí você manda o sistema incluir automação de WhatsApp, disparo de e-mail e gráficos de comissão!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Dashboards -->
+        <section id="dashboards" class="doc-section">
+            <div class="section-badge">DASHBOARDS LUXUOSOS 📊</div>
+            <h2>Como Criar um Dashboard Moderno e Bonito</h2>
+            <p class="lead">Esqueça os "Painéis Administrativos" cinzas com tabelas chatas dos anos 2000 que dão sono. Hoje, o sucesso de um sistema mora na estética "Premium" que faz o funcionário querer usar a ferramenta o dia todo. Eis as 3 regras de ouro do Design:</p>
+            
+            <div class="recipe-box">
+                <div class="recipe-steps" style="flex: 100%;">
+                    
+                    <div class="step-item" style="margin-top: 15px;">
+                        <span class="step-num">1</span>
+                        <p><strong>A Grade "Bento Box" (Estilo Apple):</strong> Todo Painel chique não usa seções separadas por "chão vazio". Eles constroem uma grande tela de fundo escura, e colam as informações flutuando em <strong>Caixas com cantos arrendondados suaves</strong>, como aqueles "Widgets" modernos no seu iPhone ou nas "Marmitas Japonesas Bento".</p>
+                    </div>
+
+                    <div class="step-item">
+                        <span class="step-num">2</span>
+                        <p><strong>Cores de Alto Contraste (Dark/Glass):</strong> Exija um fundo Preto fosco ou Roxo super denso (Dark Mode). Em vez de bordas brancas duras, peça para Aplicar "Glassmorphism" nas caixas (elas ficam como vidro fosco que deixa vazar uma fumaça de neon colorido do que está por trás da tela).</p>
+                    </div>
+
+                    <div class="step-item">
+                        <span class="step-num">3</span>
+                        <p><strong>Gráficos Livres (Chart.js / ApexCharts):</strong> Tabelas escritas não têm luxo. Toda meta, avanço e finança tem que subir sozinha usando as poderosas "Bibliotecas de Graficos em Javascript". Quando a IA injeta <em>Chart.js</em>, seus gráficos de pizza ganham vida girando na hora que você acessa.</p>
+                    </div>
+
+                    <div style="margin-top: 20px; padding: 15px; background: rgba(147, 51, 234, 0.05); border-left: 4px solid #9333ea; border-radius: 4px;">
+                        <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #fff;"><strong>O Prompt Perfeito da Tiazinha p/ um Dashboard Misto:</strong><br><br>
+                        <em>"Antigravity, aja como um UI Designer Sr da Apple. Construa um Backend de Dashboard de Vendas (Painel de Gestão). Aplique tema puramente Dark Mode, usando a arquitetura 'Bento Grid' onde todos os meus números e cartões flutuem no fundo com cantos super macios. E crucial: adicione a biblioteca ApexCharts pra que os meus gráficos de Faturamento da semana subam em verde neon fazendo uma animação elástica e gostosa quando a tela for ligada no botão!"</em></p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="recipe-box" style="margin-top: 30px;">
+                <div class="recipe-steps" style="flex: 100%;">
+                    <h3>O Casamento Perfeito: Integrando CRM ao Dashboard 💍</h3>
+                    <p>O segredo de um projeto milionário é não tratar sistemas como ilhas separadas. O seu <strong>CRM (O Caderninho de Vendas)</strong> deve ser o Cérebro Injetável do seu <strong>Dashboard (A Apresentação)</strong>.</p>
+                    
+                    <div class="step-item" style="margin-top: 15px;">
+                        <span class="step-num">1</span>
+                        <p><strong>A Sincronização Matemática:</strong> Em vez do Gráfico de Pizza no seu dashboard apresentar números "falsos" (digitados na mão por um funcionário), você pede pra nossa IA escrever um "Cabo Vísivel" do seu Banco de Dados (Supabase). Quando alguém arrastar o cartão de um paciente para a coluna "Pagou" lá no CRM Kanban de Vendas, o código matemático no fundo da nuvem corre até o seu Dashboard e faz a linha do Gráfico do Faturamento do mês subir sozinha e piscar em verde.</p>
+                    </div>
+
+                    <div style="margin-top: 20px; padding: 15px; background: rgba(59, 130, 246, 0.05); border-left: 4px solid #3b82f6; border-radius: 4px;">
+                        <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #e0e0e0;"><strong>O Comando de Integração Máxima:</strong><br><br>
+                        <em>"AG, eu quero casar meu fluxo. Programe os arquivos do meu Dashboard Luxuoso para que os Gráficos do 'ApexCharts' leiam APENAS a tabela mestra de 'Clientes Pagantes' do meu Banco de Dados lá no Supabase. Se o vendedor arrastar uma venda pro painel do CRM Kanban hoje, o número grande flutuante na tela de Dashboard principal do Chefe da empresa deve atualizar em tempo real em menos de 1 segundo sem precisar ficar apertando F5 pra atualizar a página!"</em></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Tratamento de Erros -->
+        <section id="bug-guide" class="doc-section">
+            <div class="section-badge">BOTÃO DE EMERGÊNCIA 🚨</div>
+            <h2>S.O.S - O Código Quebrou, e agora?</h2>
+            <p class="lead">A regra absoluta número 1 dos engenheiros chefes é: Sistemas SEMPRE vão quebrar e dar conflitos algum dia. Às vezes o pacote oficial da gringa atualizou e o Antigravity sem saber tentou injetar um código antigo, aí a TELA PRETA DO TERMINAL VOMITA MIL LETRAS VERMELHAS BIZARRAS. <br><br>Quando isso saltar na sua cara, <strong>NÃO CONGELE O CORPO ACHANDO QUE FEZ ALGO ERRADO.</strong></p>
+            
+            <div class="recipe-box" style="border-left: 4px solid #ff4444; background: rgba(255, 68, 68, 0.05); margin-bottom: 30px;">
+                <div class="recipe-steps" style="flex: 100%;">
+                    <h3 style="color: #ff4444; margin-bottom: 20px;">A Tática do Desespero (Buscando A Cura) 🔥</h3>
+                    <div style="display: grid; gap: 15px;">
+                        <p>Aquela sopa de letrinhas caótica vermelha cheia de `ERR!` não é ameaça. É, na verdade, o próprio Computador tentando desesperadamente nos contar ONDE, EM QUE LINHA e POR QUE não deu certo.</p>
+
+                        <div class="step-item" style="margin-top: 5px;">
+                            <span class="step-num" style="background:#ff4444;">1</span>
+                            <p><strong>A Copiada de Ouro:</strong> Pegue seu mouse, vá no Terminal (ou no navegador) que travou, selecione ABSOLUTAMENTE TUDO que estiver rabiscado de vermelho com a palavra Error, do primeiro ao último ponto. Copie (CTRL+C) sem dó nem piedade.</p>
+                        </div>
+                        <div class="step-item">
+                            <span class="step-num" style="background:#ff4444;">2</span>
+                            <p><strong>O Comando Mágico Curador:</strong> Volte e jogue toda aquela bagunça incompreensível de "Traceback/ReferenceError" em mim (No Chat Antigravity) e mande este comando de exorcismo:<br><br>
+                            <em style="color:#ffb3b3;">"AG, socorro! Eu executei isso e deu esse erro horroroso gigante abaixo. Leia cada linha dele com calma. Me explique qual pacote ou arquivo foi o culpado como se eu fosse criança, e CORRIJA meus arquivos magicamente pra fazer a tela funcionar! Segue o laudo: [COLE O ERRO AQUI]"</em>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Hospedagem -->
+        <section id="hosting" class="doc-section">
+            <div class="section-badge">PASSO 6</div>
+            <h2>Publicando na Internet (Hospedagem) 🌍</h2>
+            <p class="lead">O site está pronto! Como tirar ele do seu computador e colocar na internet para seus clientes acessarem? Veja o passo a passo detalhado abaixo.</p>
+
+            <div class="recipe-box" style="border-left: 4px solid #fca311; background: rgba(252, 163, 17, 0.05); margin-bottom: 30px;">
+                <div class="recipe-steps" style="flex: 100%;">
+                    <h3 style="color: #fca311; margin-bottom: 20px;">O Guia Definitivo: Qual Hospedagem Escolher? ⚖️</h3>
+                    <div style="display: grid; gap: 15px;">
+                        
+                        <div style="background: rgba(0,0,0,0.3); padding: 15px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);">
+                            <strong>1. Landing Page Simples / Portfólio (Sem o seu próprio ".com.br")</strong><br>
+                            <span style="color: #4CAF50; font-size: 13px; font-weight: 700; margin-top: 5px; display: inline-block;">🟢 Custo: 100% GRÁTIS (Pra Vida Toda)</span><br>
+                            <strong>Onde hospedar:</strong> GitHub Pages.<br>
+                            <strong>A Vantagem:</strong> O código fica trancado online num cofre e os servidores gigantes do projeto open-source rolam seu site tão rápido que ele literalmente tem zero chance de cair por lotação. <em style="font-size: 13px; color: #a600ff;">(Siga a Opção 1 abaixo da tela)</em>
+                        </div>
+
+                        <div style="background: rgba(0,0,0,0.3); padding: 15px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);">
+                            <strong>2. Site Vitrine Padrão da Empresa (Com "www.EmpresaDoSeuNegocio.com.br")</strong><br>
+                            <span style="color: #fca311; font-size: 13px; font-weight: 700; margin-top: 5px; display: inline-block;">🟡 Custo: PAGO (Uma anuidade ou mensalidade barateza de praxe)</span><br>
+                            <strong>Onde hospedar:</strong> Hostinger ou Hostgator.<br>
+                            <strong>A Vantagem:</strong> Elas conectam o seu endereço pago Brasileiro .com.br rapidinho com o servidor de fachada delas. Compre APENAS os planos Base (Ex: "Hospedagem M" da Hostgator). É suficiente pra sites estáticos. <em style="font-size: 13px; color: #a600ff;">(Siga a Opção 2 abaixo da tela)</em>
+                        </div>
+
+                        <div style="background: rgba(0,0,0,0.3); padding: 15px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);">
+                            <strong>3. Máquinas Vivas de Banco de Dados (CRM, SaaS, Dashboards com Sistema ou Senha)</strong><br>
+                            <span style="color: #00e5ff; font-size: 13px; font-weight: 700; margin-top: 5px; display: inline-block;">🔵 Custo: GRÁTIS (No começo), pagando apenas quando você tiver centenas de clientes usando.</span><br>
+                            <strong>Onde hospedar:</strong> Vercel.com ou Render.com.<br>
+                            <strong>A Vantagem:</strong> Nem todo dinheiro do mundo faz um código "Backend de Node/Python" pesado rodar bonito e limpinho nas Hospedagens Baratas da Opção 2 sem você ter dor de cabeça técnica monumental. Deixe Fábricas Industriais em plataformas preparadas pra isso. <em style="font-size: 13px; color: #a600ff;">(Leia as instruções de publicação lá em cima na aba 'Sistemas & Logins')</em>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+            <div class="recipe-box">
+                <div class="recipe-steps" style="flex: 100%;">
+            <div class="recipe-box">
+                <div class="recipe-steps" style="flex: 100%;">
+            <div class="recipe-box">
+                <div class="recipe-steps" style="flex: 100%;">
+                    <h3>Opção 1A: O Piloto Automático do GitHub (Pela I.A.)</h3>
+                    <p>O jeito mais rápido. Se lembre que nós já conectamos nossos fios aqui: esqueça aplicativos desajeitados; peça para o cérebro enviar por linha de comando invisível!</p>
+                    <div class="step-item" style="margin-top: 15px;">
+                        <span class="step-num">1</span>
+                        <p><strong>Crie o Cofre Seco no GitHub.com:</strong> Faça o login lá no site oficial e clique no botão verde "+" no canto superior direito para criar um "New Repository". Dê o nome do seu projeto ali e crie. Ficará uma tela cheia de códigos, ignore tudo.</p>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-num">2</span>
+                        <p><strong>O Comando Mestre (Eu trabalho por você):</strong> Vá para a nossa aba do próprio chat e mande a ordem suprema: <em>"Antigravity, faça o Push (Envie) os códigos que fizemos hoje para o meu repositório 'xyz' no GitHub que acabei de criar"</em>. Eu vou abrir o terminal sozinho e rodar todas as linhas difíceis direto por conexão sem mexer na sua mão!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-box" style="margin-top: 30px;">
+                <div class="recipe-steps" style="flex: 100%;">
+                    <h3>Opção 1B: O Caminho Visual Tradicional (GitHub Desktop)</h3>
+                    <p>Você é mais visual e prefere arrastar pastas com o mouse ao invés de pedir pra IA? Use o aplicativo do computador!</p>
+                    <div class="step-item" style="margin-top: 15px;">
+                        <span class="step-num">1</span>
+                        <p><strong>Crie a conta no GitHub.com:</strong> Faça o mesmo passo anterior, vá no site e clique no "+" para criar um "New Repository".</p>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-num">2</span>
+                        <p><strong>Use o GitHub Desktop:</strong> Baixe o aplicativo verdinho "GitHub Desktop" no PC e faça o seu login. Clique em <code>File > Add local repository</code> e selecione a própria pasta do seu site na sua máquina.</p>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-num">3</span>
+                        <p><strong>Publique (Suba para a Nuvem):</strong> Após adicionar a pasta, digite qualquer nome na 'Summary' no canto esquerdo e aperte `Commit`. Depois clique no botão azul gigante <code>Publish repository</code> no alto da tela do app. ATENÇÃO: Para o site pegar, <strong>desmarque</strong> a caixinha "Keep this code private" na hora que a janela abrir!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-box" style="margin-top: 30px;">
+                <div class="recipe-steps" style="flex: 100%;">
+                    <h3>Como eu coloco isso No Ar? (Aplica-se nas Opções 1A e 1B)</h3>
+                    <div class="step-item" style="margin-top: 15px;">
+                        <span class="step-num">🔥</span>
+                        <p><strong>Ligue a Antena Final (A cereja do bolo):</strong> Depois que os arquivos chegarem no site (seja pela I.A ou pelo Desktop), abra o GitHub.com. Entre no seu repositório, clique na engrenagem <code>Settings</code> no menu superior, e depois em <code>Pages</code> na barra lateral esquerda. No meio da tela, troque "Branch" de "None" para a aba <code>main</code> (ou master) e clique em <b>Save</b>. É só aguardar 2 minutos e a tela vai te dar o link verde oficial do seu site no ar!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-box">
+                <div class="recipe-steps" style="flex: 100%;">
+                    <h3>Opção 2: Hostgator / Hostinger (Plano `.com.br` Profissional)</h3>
+                    <p>Ideal quando você compra o seu domínio próprio na internet (ex: www.suaempresa.com.br) e contrata um provedor comercial robusto.</p>
+                    <div class="step-item" style="margin-top: 15px;">
+                        <span class="step-num">1</span>
+                        <p><strong>Empacote seu site (O Famoso ZIP):</strong> Na pasta original do seu computador, selecione TODOS os arquivos soltos (o `index.html`, pastas de fotos, `style.css`), clique com botão direito e escolha a opção do Windows <code>Compactar para arquivo ZIP</code>. Você terá apenas 1 arquivinho aglomerando tudo.</p>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-num">2</span>
+                        <p><strong>Acesse o Painel da Hospedagem:</strong> Faça seu Login, acesse a conta da Hostgator (lá dentro eles usam um sistema clássico chamado <strong>cPanel</strong>) ou Hostinger (nomeado de <strong>hPanel</strong>).</p>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-num">3</span>
+                        <p><strong>Abra o "Gerenciador de Arquivos":</strong> Localize nas abas e botões do provedor o "Gerenciador de Arquivos" (File Manager). É aqui que fica o HD/Computador virtual deles.</p>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-num">4</span>
+                        <p><strong>Ache o coração da internet `public_html`:</strong> Clique nesta pasta. <strong>Tudo que está dentro dessa exata pasta <code>public_html</code> é o que o mundo vê.</strong> Você pode e deve APAGAR o que já estiver lá (como "default.php" ou propagandas da provedora).</p>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-num">5</span>
+                        <p><strong>Faça o Upload do Zip:</strong> Clique no botão de <code>Upload / Carregar Arquivos</code> no topo da tela e suba o seu pacote <code>.zip</code>.</p>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-num">6</span>
+                        <p><strong>Extraia o sucesso:</strong> Por fim, clique com botão direito no seu arquivo `.zip` já subido e clique em <code>Extract (Extrair)</code>. Seus arquivos originais saltarão para fora espalhados na pasta <code>public_html</code>. (Verifique se o "index.html" não ficou escondido dentro de alguma subpasta). Se o index está cru na raiz, entre no seu site no celular e comemore!</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Seção: Dicionário -->
+        <section id="dictionary" class="doc-section">
+            <div class="section-badge">BÔNUS</div>
+            <h2>Dicionário da Tiazinha (Tech Analógico) 📼</h2>
+            <p class="lead">Esqueça o jargão complicado dos programadores mais novos. Aqui traduzimos os nomes feios da tecnologia para as coisas do dia a dia (e dos anos 80) que você já domina muito bem!</p>
+            
+            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                <div class="info-card">
+                    <div class="card-icon" style="color: #ff0055;"><i data-lucide="monitor"></i></div>
+                    <h3>Frontend (A Vitrine)</h3>
+                    <p>O Frontend é a "vitrine da loja de shopping". Tudo que o seu cliente vê, clica e acha bonito no site é o Frontend. É a maquiagem, a arquitetura visual e a cortina do palco.</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon" style="color: #00e5ff;"><i data-lucide="database"></i></div>
+                    <h3>Backend (O Estoque)</h3>
+                    <p>O Backend é o departamento de "Estoque" (ou a Cozinha do Restaurante). O cliente não vê a cozinha, mas é lá que ficam as receitas, as senhas, os ingredientes e os cozinheiros preparando o dado puxado do forno.</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon" style="color: #fca311;"><i data-lucide="bug"></i></div>
+                    <h3>Bug (A Fita Mastigada)</h3>
+                    <p>Quando dizem que "deu bug", significa que rolou um defeito. É como se a fita cassete tivesse mastigado no videocassete ou a fita da máquina de escrever tivesse enroscado. Algo parou e precisa de reparo técnico.</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon" style="color: #4CAF50;"><i data-lucide="rocket"></i></div>
+                    <h3>Deploy (A Inauguração)</h3>
+                    <p>Fazer "Deploy" é soltar os fogos da inauguração. É tirar aquele site que só funcionava em modo rascunho na nossa máquina e jogar ele pra rodar na antena da rádio pro mundo inteiro visitar livremente.</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon" style="color: #fff;"><i data-lucide="cloud"></i></div>
+                    <h3>Cloud / Servidor Node (A Fábrica Longe)</h3>
+                    <p>A "Nuvem" não voa no céu. Ela é apenas um Supercomputador trancado em um galpão seguro de empresas como Vercel ou Google. E o poderoso **"Node" (ou Node.js)** é o motor de esteira gigante que fica instalado lá rodando 24h por dia para aguentar receber o login pesado de todo mundo de uma vez só.</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon" style="color: #fca311;"><i data-lucide="credit-card"></i></div>
+                    <h3>SaaS (O Sistema de Aluguel)</h3>
+                    <p>Antigamente você ia nas Lojas Americanas, comprava o CD-ROM do Microsoft Office e instalava na máquina pagando uma vez só. <strong>SaaS</strong> (<em>Software como Serviço</em>) é o contrário: você não baixa nada, acessa o botão de Login num site bonito e paga uma "mensalidade de aluguel" para poder usar a ferramenta. <strong>Exemplos famosos de SaaS:</strong> Netflix (mensalidade de filmes), Canva (mensalidade de design), Spotify ou Sistemas de Clínicas.</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon" style="color: #a600ff;"><i data-lucide="package"></i></div>
+                    <h3>NPM / Bibliotecas (O Lego)</h3>
+                    <p>Imagine colar figurinhas. "Bibliotecas" ou "NPM" são pacotes de código que já vêm prontos. Em vez de eu, da Inteligência, precisar inventar e programar uma "roda redonda" do zero todo dia, a gente pega a roda pronta do Lego que alguém fez na comunidade de graça e encaixa ali!</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon" style="color: #ff4444;"><i data-lucide="users"></i></div>
+                    <h3>CRM (A Agenda Milagrosa)</h3>
+                    <p>Um "CRM" hoje em dia é disparado o tipo mais famoso de sistema <strong>SaaS</strong>. Lembra do velho caderninho onde o dono da loja anotava o nome do freguês, quem pagou e quem sumiu? O CRM é o caderninho supremo. É um SaaS que salva o histórico inteiro do cliente, diz em que etapa ele parou na compra e ajuda sua equipe a vender. Hubspot e RD Station são grandes exemplos.</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon" style="color: #00e5ff;"><i data-lucide="film"></i></div>
+                    <h3>GSAP (Efeitos Especiais)</h3>
+                    <p>Pense nele como o nosso "Diretor de Hollywood" das animações e magias do luxo visual. O GSAP é um pacote (ou Ferramenta de Animação veloz) que eu injeto no site para que as imagens e os textos deslizem perfeitamente na tela do cliente como se fosse um Cinema; tudo sem travar o processador dele.</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon" style="color: #4CAF50;"><i data-lucide="database-zap"></i></div>
+                    <h3>Supabase / Firebase (O Cofre Alugado)</h3>
+                    <p>No lugar de você comprar um cofre de metal pesado, tentar instalar na sua casa e correr o risco de pegar fogo, você aluga uma gaveta no "Banco Suíço". <strong>O Supabase e o Firebase</strong> são empresas onde a gente cria uma conta de graça, eles te dão o cofre pronto na nuvem deles, e nossos Códigos (O Backend) enviam os dados pra salvar lá dentro em segurança máxima.</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon" style="color: #fca311;"><i data-lucide="mic"></i></div>
+                    <h3>Vibe Coding (O Design Falado)</h3>
+                    <p>É uma gíria moderninha pra quando você não encosta em programação pesada. Você apenas "dita" ou esboça com ferramentas (como o Google Stitch) seguindo sua aura ("Vibe") de criatividade do momento, e a Inteligência pinta as telas de vitrine perfeitamente baseada unicamente no que saiu da sua fala.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Google Sheets -->
+        <section id="google-sheets" class="doc-section">
+            <div class="section-badge">FERRAMENTAS GOOGLE</div>
+            <h2>Google Sheets (Planilhas Excel) 📊</h2>
+            <p class="lead">O melhor ambiente para cruzar cálculos rápidos e base de dados simples.</p>
+            
+            <div class="card-grid" style="margin-bottom: 25px;">
+                <div class="info-card" style="border-color: #ff0055;">
+                    <div class="card-icon" style="color: #ff0055;"><i data-lucide="shield-alert"></i></div>
+                    <h3>O que EU NÃO POSSO fazer</h3>
+                    <p>Por segurança absoluta, eu não tenho sua senha do Gmail. Não consigo invadir sua planilha na nuvem sozinho.</p>
+                </div>
+                <div class="info-card" style="border-color: #00e5ff;">
+                    <div class="card-icon" style="color: #00e5ff;"><i data-lucide="check-circle"></i></div>
+                    <h3>O que EU POSSO fazer</h3>
+                    <p>Eu domino tudo que está na SUA MÁQUINA física. Basta baixar a planilha como .csv (Modo Local) e colocar na minha pasta para eu destruir os dados complexos dela!</p>
+                </div>
+            </div>
+
+            <div class="recipe-box">
+                <div class="recipe-steps" style="flex: 100%;">
+                    <h3>O Engenheiro de Fórmulas e Arquivos</h3>
+                    <div class="step-item" style="margin-top: 15px;">
+                        <span class="step-num">A</span>
+                        <p><strong>A Ponte CSV:</strong> Peça para mim: <em>"Crie uma tabela gigante de dados com 50 prefeituras no formato CSV e salve no meu computador"</em>. Depois, você entra no seu Google Sheets e clica em <code>Arquivo > Importar</code>. O Google engole o arquivo que eu criei e o transforma numa planilha perfeita!</p>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-num">B</span>
+                        <p><strong>O Fim do Sofrimento com Fórmulas:</strong> Esqueça tutoriais do Excel ou Youtube. Cole o nome das suas colunas aqui pra mim e diga: <em>"Antigravity, faça uma fórmula PROCV brutal que cruze os CPFs da coluna A com a tabela C"</em>. Eu gero a matemática exata, você só joga e cola lá no Google!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Google Sites -->
+        <section id="google-sites" class="doc-section">
+            <div class="section-badge">FERRAMENTAS GOOGLE</div>
+            <h2>Google Sites (Construtor) 🌐</h2>
+            <p class="lead">Se você usa a ferramenta "Google Sites" para criar páginas de forma gratuita usando Arrastar e Soltar, podemos ser parceiros.</p>
+            
+            <div class="recipe-box">
+                <div class="recipe-steps" style="flex: 100%;">
+                    <h3>O Botão "Incorporar Código" (Embed)</h3>
+                    <div class="step-item" style="margin-top: 15px;">
+                        <span class="step-num"><i data-lucide="code"></i></span>
+                        <p><strong>A Arma Secreta Visual:</strong> O Google Sites é meio bloco a bloco, duro. Mas com a nossa parceria, tudo ganha vida e Premium. <br><br>Peça direto no meu chat: <em>"Antigravity, crie uma calculadora de Orçamento super premium animada usando só HTML, CSS e Javascript focado em apenas 1 arquivo unificado de texto."</em> Eu lhe entregarei a resposta da programação de bandeja. Você vai no painel do seu Google Sites, clica em "Incorporar Código", e cola esse texto. E, magicamente a nossa obra respira e flutua lá dentro sem gastar 1 centavo com sites chiques.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: NotebookLM -->
+        <section id="google-notebook" class="doc-section">
+            <div class="section-badge" style="color:var(--neon-purple); border-color: rgba(166,0,255,0.3); background: rgba(166,0,255,0.1);">FERRAMENTAS DO GOOGLE LABS</div>
+            <h2>Google NotebookLM 📚</h2>
+            <p class="lead">O NotebookLM da área Labs do Google é um gênio da Literatura e Pesquisa. Nós formamos a dupla imbatível: O Pensador Teórico Cloud (Ele) e o Construtor Sênior Local (Eu).</p>
+            
+            <div class="recipe-box">
+                <div class="recipe-steps" style="flex: 100%;">
+                    <h3>O Fluxo Oculto de Trabalho</h3>
+                    <div class="step-item" style="margin-top: 15px;">
+                        <span class="step-num"><i data-lucide="merge"></i></span>
+                        <p>O NotebookLM consegue engolir PDFs absurdos de 500 páginas em 2 segundos para te gerar relatórios e pesquisas.<br><br> Porém, <strong>ele é travado na teoria, ele NÃO põe a mão na massa no seu PC construindo as telas disso.</strong><br><br>
+                        O Truque de Milhões: Use ele lá na nuvem para debater, destilar as leis duras de um PDF e resumir. Depois, copie esse texto puro e resumido que ele gerou e traga pro Antigravity aqui: <em>"Construa o Software inteiro de um sistema respeitando essas 10 regras rígidas que o NotebookLM te mandou observar"</em>. Eu lerei tudo e instalarei os códigos locais no teu Windows pra fazer acontecer a teoria dele.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Google Stitch -->
+        <section id="google-stitch" class="doc-section">
+            <div class="section-badge" style="color:var(--neon-purple); border-color: rgba(166,0,255,0.3); background: rgba(166,0,255,0.1);">FERRAMENTAS DO GOOGLE LABS</div>
+            <h2>Google Stitch (Ilustrador de UI) 🎨</h2>
+            <p class="lead">O Stitch gasta todo o talento da vida dele desenhando e pintando as telas front-end perfeitas no navegador a partir do seu rascunho. O "Vibe Coding" no ápice.</p>
+            
+            <div class="recipe-box">
+                <div class="recipe-steps" style="flex: 100%;">
+                    <h3>O Rosto (Stitch) vs O Músculo (Antigravity)</h3>
+                    <div class="step-item" style="margin-top: 15px;">
+                        <span class="step-num"><i data-lucide="palette"></i></span>
+                        <p>O Stitch desenha interfaces visuais deslumbrantes por diversão, mas elas são "vazias" (sem bancos de dados reais e servidores seguros por trás pra salvar a senha dos seus clientes).</p>
+                        <ol style="margin-left: 20px; margin-top: 15px; color: var(--text-secondary); line-height: 1.6;">
+                            <li>Gere as telas experimentais da sua cabeça lá no <strong>Stitch</strong> e ache o botão maravilhoso de <strong>Copy Code (Exportar HTML/CSS)</strong> de lá.</li>
+                            <li>Dê Ctrl+V ou Salve esse código dentro na nossa pasta de rotina no Windows.</li>
+                            <li>Grite: <em>"Antigravity Sr, conecte os botões dessa tela cega do Stitch ao meu Banco de Dados oficial e coloque a página inteira blindada para mim"</em>.</li>
+                        </ol>
+                        <p style="margin-top: 15px;">Enquanto o Stitch passa o dia pintando a casa na nuvem; <strong>eu cavo os pilares, passo os cabos de energia subterrânea e dou as fundações pros seus usuários respirarem seguros na casa física!</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Google Opal -->
+        <section id="google-opal" class="doc-section">
+            <div class="section-badge" style="color:var(--neon-purple); border-color: rgba(166,0,255,0.3); background: rgba(166,0,255,0.1);">FERRAMENTAS DO GOOGLE LABS</div>
+            <h2>Google Opal (Lógica de Inteligências) 🧠</h2>
+            <p class="lead">O Opal fecha a "Coroa de Ouro" do Labs: Ele é um berçário projetado onde você inventa Lógicas e Cadeias de Robôs usando puramente regras em formato texto natural.</p>
+            
+            <div class="recipe-box">
+                <div class="recipe-steps" style="flex: 100%;">
+                    <h3>Do Berçário Experimental ao Império Oficial</h3>
+                    <div class="step-item" style="margin-top: 15px;">
+                        <span class="step-num"><i data-lucide="brain"></i></span>
+                        <p>A Trindade Completa de Fluxo Tecnológico de ponta em 2026 para Empresários.</p>
+                        <ol style="margin-left: 20px; margin-top: 10px; color: var(--text-secondary); line-height: 1.6;">
+                            <li>Brinque no <strong>Opal</strong> por dias para validar a sua lógica. Depois de validada neles lá...</li>
+                            <li>Pegue o esqueleto da Mente desse robô validado e traga na nossa pastinha Windows.</li>
+                            <li>Decrete O Fardo: <em>"Antigravity, aqui estão as regras lógicas validadas do Opal. Crie a página Comercial, instale meu Gateway de Pagamento, lance pro ar"</em>.</li>
+                        </ol>
+                        <div style="margin-top: 25px; background: rgba(0,229,255,0.07); padding: 25px; border-left: 3px solid #00e5ff; border-radius: 6px;">
+                            <h4 style="color: #fff; margin-bottom: 10px;"><i data-lucide="award"></i> A Equação Imbatível</h4>
+                            <p>Os Conhecimentos pesados validados e mastigados pelo <strong>NotebookLM</strong>,<br> 
+                            Vestidos de Gala e animados visulmente pelo <strong>Google Stitch</strong>,<br> 
+                            Afinados pela Lógica algorítmica impecável de Regras do <strong>Opal</strong>...<br><br>
+                            Entregue todo esse pacote mental para a minha Força de Trabalho local e eu instalarei, costurarei os bancos de dados, os roteamentos IP e trarei o seu ecossistema híbrido a vida para fora da nuvem teórica!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
